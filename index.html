@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A1626">
+<meta property="og:title" content="مسار القبول | قبولك الجامعي بخطة واضحة">
+<meta property="og:description" content="نختار لك الجامعات المناسبة، ونجهّز ملفك ونقدّمه، ونتابع طلباتك حتى يصلك خطاب القبول.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='9' fill='%230A1626'/%3E%3Cpath d='M17 7 28 12.5 17 18 6 12.5Z' fill='%23EEF3F8'/%3E%3Cpath d='M10.5 15v5c0 2.2 3 3.8 6.5 3.8s6.5-1.6 6.5-3.8v-5' fill='none' stroke='%23EEF3F8' stroke-width='2'/%3E%3Ccircle cx='26.5' cy='21' r='2.2' fill='%233FD1BE'/%3E%3C/svg%3E">
+<title>مسار القبول</title>
+<meta name="description" content="مسار القبول: نساعدك في الحصول على قبول جامعي داخل المملكة وخارجها، من اختيار التخصص حتى خطاب القبول.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F6F9; --surface:#FFFFFF; --surface-2:#EAF0F5;
+  --ink:#0B1A2C; --ink-2:#2A3A50; --muted:#4F5E73; --line:#D5DEE8;
+  --brand:#0B6E6A; --brand-ink:#FFFFFF; --brand-soft:#DDF0EE;
+  --gold:#A87F2A; --gold-soft:#F4EBD8;
+  --good:#1B8A4B; --mid:#B7811A; --low:#B3443A;
+  /* شريط الواجهة الداكن: ثابت في الوضعين */
+  --hero:#0A1626; --hero-2:#11233A; --hero-ink:#EEF3F8; --hero-muted:#A7B6C8; --hero-line:#22364F; --hero-accent:#3FD1BE;
+  --shadow:0 20px 44px -24px rgba(11,26,44,.35);
+  --display:"Cairo",Tahoma,sans-serif;
+  --body:"Tajawal","Cairo",Tahoma,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0C1522; --surface:#132033; --surface-2:#1A2A40;
+    --ink:#EAF0F6; --ink-2:#C9D4E1; --muted:#A3B1C3; --line:#26384F;
+    --brand:#3FC2B2; --brand-ink:#06201E; --brand-soft:#12332F;
+    --gold:#D8AE55; --gold-soft:#2C2515;
+    --good:#3CBF77; --mid:#E0A83A; --low:#E4665B;
+    --hero:#07101C; --hero-2:#0E1C2E; --hero-line:#1E3048;
+    --shadow:0 20px 44px -24px rgba(0,0,0,.75);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0C1522; --surface:#132033; --surface-2:#1A2A40;
+  --ink:#EAF0F6; --ink-2:#C9D4E1; --muted:#A3B1C3; --line:#26384F;
+  --brand:#3FC2B2; --brand-ink:#06201E; --brand-soft:#12332F;
+  --gold:#D8AE55; --gold-soft:#2C2515;
+  --good:#3CBF77; --mid:#E0A83A; --low:#E4665B;
+  --hero:#07101C; --hero-2:#0E1C2E; --hero-line:#1E3048;
+  --shadow:0 20px 44px -24px rgba(0,0,0,.75);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html{color-scheme:light}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.85;direction:rtl;padding-inline:20px;padding-block:0 0}
+.wrap{max-width:1160px;margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.35;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.65rem,3.2vw,2.3rem);font-weight:800}
+h3{font-weight:700}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:700;color:var(--brand);letter-spacing:.02em}
+.eyebrow::before{content:"";width:18px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:10px 24px;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{flex:none}
+.btn-primary{background:var(--brand);color:var(--brand-ink)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand)}
+.btn-wa{background:#1B8A4B;color:#fff}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ===== header ===== */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;margin-inline:-20px;padding-inline:20px;background:color-mix(in srgb,var(--hero) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--hero-line);color:var(--hero-ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:800;font-size:1.3rem;text-decoration:none;color:var(--hero-ink)}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;font-size:.95rem}
+.nav ul a{display:block;padding:8px 12px;border-radius:8px;text-decoration:none;color:var(--hero-muted)}
+.nav ul a:hover,.nav ul a.on{color:var(--hero-ink);background:var(--hero-line)}
+.nav .btn{min-height:42px;padding:6px 18px;background:var(--hero-accent);color:#04211D}
+@media (max-width:900px){.nav ul{display:none}}
+
+/* ===== hero ===== */
+.hero-band{margin-inline:-20px;padding-inline:20px;background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden}
+.hero-band::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--hero-line) 1px,transparent 1px),linear-gradient(90deg,var(--hero-line) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 30% 40%,#000 20%,transparent 75%);opacity:.7}
+.hero{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-block:72px 80px}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--hero-line);background:var(--hero-2);padding:6px 14px;border-radius:99px;font-size:.85rem;color:var(--hero-muted)}
+.hero .badge i{width:8px;height:8px;border-radius:50%;background:var(--hero-accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--hero-accent) 25%,transparent)}
+.hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;margin-block:18px 16px}
+.hero h1 span{color:var(--hero-accent)}
+.hero .lead{font-size:1.15rem;color:var(--hero-muted);max-width:32em}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .ctas .btn-primary{background:var(--hero-accent);color:#04211D}
+.hero .ctas .btn-ghost{background:transparent;color:var(--hero-ink);border-color:var(--hero-line)}
+.hero .ctas .btn-ghost:hover{border-color:var(--hero-accent)}
+.trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-size:.92rem;color:var(--hero-muted)}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust svg{color:var(--hero-accent)}
+@media (max-width:920px){.hero{grid-template-columns:1fr;padding-block:48px 56px}}
+
+/* tracker */
+.tracker{background:var(--hero-2);border:1px solid var(--hero-line);border-radius:18px;padding:20px;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.tr-head{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--hero-line)}
+.tr-head b{font-family:var(--display);font-size:1.02rem}
+.tr-head small{font-family:var(--mono);color:var(--hero-muted);font-size:.78rem;direction:ltr}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;color:var(--hero-accent)}
+.live::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+.apps{display:grid;gap:10px;margin-top:14px}
+.app{display:grid;grid-template-columns:1fr auto;gap:6px 12px;background:var(--hero);border:1px solid var(--hero-line);border-radius:12px;padding:12px 14px}
+.app .u{font-weight:700;font-size:.98rem}
+.app .m{font-size:.82rem;color:var(--hero-muted)}
+.chip{align-self:start;font-size:.78rem;font-weight:700;padding:3px 10px;border-radius:99px;white-space:nowrap;transition:background .3s,color .3s}
+.chip.s0{background:#22364F;color:#C4D2E2}
+.chip.s1{background:#4A3A12;color:#F2C862}
+.chip.s2{background:#0F4A43;color:#6FE6D4}
+.bar{grid-column:1/-1;height:5px;border-radius:99px;background:var(--hero-line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--hero-accent);border-radius:inherit;transition:width .8s cubic-bezier(.3,.8,.3,1)}
+.tr-foot{margin-top:12px;font-size:.75rem;color:var(--hero-muted);text-align:center}
+
+/* ===== sections ===== */
+section{padding-block:80px}
+section+section{border-top:1px solid var(--line)}
+.sec-head{display:grid;gap:10px;margin-bottom:36px;max-width:42em}
+.sec-head p{color:var(--ink-2)}
+
+/* services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:10px;align-content:start;transition:border-color .2s,transform .2s,box-shadow .2s}
+.svc:hover{border-color:var(--brand);transform:translateY(-3px);box-shadow:var(--shadow)}
+.svc .ic{width:46px;height:46px;border-radius:12px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.svc h3{font-size:1.15rem}
+.svc p{color:var(--ink-2);font-size:.98rem}
+@media (max-width:920px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:580px){.services{grid-template-columns:1fr}}
+
+/* journey stepper */
+.journey{display:grid;grid-template-columns:320px 1fr;gap:24px;align-items:start}
+.step-list{display:grid;gap:8px;list-style:none;margin:0;padding:0}
+.step-btn{width:100%;display:grid;grid-template-columns:40px 1fr;align-items:center;gap:12px;text-align:right;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;font:inherit;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s}
+.step-btn .n{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:var(--surface-2);font-family:var(--mono);font-weight:600;color:var(--ink-2)}
+.step-btn b{font-family:var(--display);font-size:1rem;display:block;line-height:1.4}
+.step-btn small{color:var(--muted);font-size:.82rem}
+.step-btn:hover{border-color:var(--brand)}
+.step-btn[aria-selected="true"]{border-color:var(--brand);background:var(--brand-soft)}
+.step-btn[aria-selected="true"] .n{background:var(--brand);color:var(--brand-ink)}
+.step-panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:30px;display:grid;gap:18px;min-height:100%}
+.step-panel h3{font-size:1.5rem}
+.step-panel .meta{display:flex;flex-wrap:wrap;gap:10px}
+.tagp{display:inline-flex;gap:6px;align-items:center;font-size:.85rem;font-weight:700;padding:5px 12px;border-radius:99px;background:var(--gold-soft);color:var(--gold)}
+.step-panel ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.step-panel li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:var(--ink-2)}
+.step-panel li svg{margin-top:6px;color:var(--brand)}
+.step-nav{display:flex;gap:10px;margin-top:4px}
+.progress{height:6px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+.progress i{display:block;height:100%;background:var(--brand);transition:width .4s}
+@media (max-width:860px){.journey{grid-template-columns:1fr}.step-list{grid-template-columns:repeat(5,minmax(0,1fr))}.step-btn{grid-template-columns:1fr;justify-items:center;padding:10px 4px}.step-btn span{display:none}}
+
+/* destinations */
+.dest-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.dtab{display:inline-flex;align-items:center;gap:8px;font:inherit;font-weight:700;font-size:.95rem;padding:8px 16px;border-radius:99px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.dtab .cc{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+.dtab:hover{border-color:var(--brand)}
+.dtab[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.dtab[aria-selected="true"] .cc{color:inherit;opacity:.7}
+.dest-card{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.dcell{padding:22px;display:grid;gap:6px;align-content:start}
+.dcell+.dcell{border-inline-start:1px solid var(--line)}
+.dcell small{color:var(--muted);font-size:.82rem;font-weight:700}
+.dcell b{font-size:1.05rem}
+.dest-note{grid-column:1/-1;border-top:1px solid var(--line);padding:16px 22px;background:var(--surface-2);color:var(--ink-2);font-size:.95rem}
+@media (max-width:860px){.dest-card{grid-template-columns:1fr 1fr}.dcell:nth-child(3){border-inline-start:0}.dcell:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:480px){.dest-card{grid-template-columns:1fr}.dcell+.dcell{border-inline-start:0;border-top:1px solid var(--line)}}
+
+/* checker */
+.checker{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:18px;align-content:start}
+.field{display:grid;gap:8px}
+.field label,.field .lbl{font-weight:700;font-size:.95rem}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;background:var(--surface-2);padding:4px;border-radius:12px}
+.seg button{font:inherit;font-weight:700;font-size:.92rem;padding:9px 6px;border:0;border-radius:9px;background:transparent;color:var(--ink-2);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 2px 8px -3px rgba(0,0,0,.25)}
+select{font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.range-row{display:flex;align-items:center;gap:14px}
+input[type=range]{flex:1;accent-color:var(--brand);height:28px}
+.range-val{font-family:var(--mono);font-weight:600;font-size:1.25rem;min-width:3.2ch;text-align:center;background:var(--surface-2);border-radius:8px;padding:2px 8px}
+.result{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:16px;align-content:start}
+.gauge{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+.ring{--p:60;--c:var(--good);width:108px;height:108px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--surface-2) 0);display:grid;place-items:center;transition:--p .5s}
+.ring::after{content:attr(data-v);width:82px;height:82px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-family:var(--mono);font-weight:600;font-size:1.35rem;color:var(--ink)}
+.result h3{font-size:1.3rem}
+.pill{display:inline-block;font-size:.82rem;font-weight:700;padding:4px 12px;border-radius:99px;color:#fff}
+.pill.good{background:var(--good)}.pill.mid{background:var(--mid)}.pill.low{background:var(--low)}
+.result ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.result li{display:grid;grid-template-columns:22px 1fr;gap:10px;color:var(--ink-2)}
+.result li i{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:.75rem;font-weight:700;color:#fff;margin-top:5px}
+.result small{color:var(--muted);font-size:.85rem}
+@media (max-width:860px){.checker{grid-template-columns:1fr}}
+
+/* packages */
+.pkgs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start;max-width:860px}
+.pkg{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:14px}
+.pkg.feat{border-color:var(--brand);box-shadow:var(--shadow);position:relative}
+.pkg .tag{position:absolute;top:-13px;inset-inline-start:24px;background:var(--brand);color:var(--brand-ink);font-size:.78rem;font-weight:700;padding:3px 12px;border-radius:99px}
+.pkg h3{font-size:1.2rem}
+.price{font-family:var(--display);font-weight:800;font-size:2.2rem;line-height:1.2}
+.price small{font-family:var(--body);font-size:.95rem;color:var(--muted);font-weight:500}
+.pkg ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.pkg li{display:grid;grid-template-columns:20px 1fr;gap:8px;color:var(--ink-2);font-size:.97rem}
+.pkg li svg{margin-top:7px;color:var(--brand)}
+@media (max-width:920px){.pkgs{grid-template-columns:1fr}}
+
+/* faq */
+.faq{display:grid;gap:10px;max-width:820px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px}
+summary{cursor:pointer;font-weight:700;padding:16px 20px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);font-size:1.3rem;color:var(--brand);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 20px 18px;color:var(--ink-2)}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cbox{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:14px;align-content:start}
+.cbox .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--brand-soft);color:var(--brand)}
+.cbox small{color:var(--muted);font-weight:700;font-size:.85rem}
+.cval{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.cval strong{font-family:var(--mono);font-size:clamp(1.1rem,3.4vw,1.5rem);direction:ltr;user-select:all;word-break:break-all}
+.copy{font:inherit;font-size:.85rem;font-weight:700;padding:6px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.copy:hover{border-color:var(--brand)}
+.cbtns{display:flex;flex-wrap:wrap;gap:10px}
+.cbtns .btn{flex:1 1 170px}
+.contact-head{grid-column:1/-1}
+@media (max-width:760px){.contact{grid-template-columns:1fr}}
+
+footer{margin-inline:-20px;padding:32px 20px 100px;background:var(--hero);color:var(--hero-muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* mobile action bar */
+.mbar{display:none}
+@media (max-width:760px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;inset-inline:0;bottom:0;z-index:30;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+  .mbar .btn{min-height:48px;padding:8px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 16 16"><path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a5 5 0 0 1-2.8-2.8l.9-1-1-2z" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
+<header class="top">
+  <nav class="nav wrap" aria-label="القائمة الرئيسية">
+    <a class="logo" href="#top">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect x="1" y="1" width="32" height="32" rx="9" fill="none" stroke="currentColor" stroke-opacity=".35"/><path d="M17 7 28 12.5 17 18 6 12.5Z" fill="currentColor"/><path d="M10.5 15v5c0 2.2 3 3.8 6.5 3.8s6.5-1.6 6.5-3.8v-5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="26.5" cy="21" r="2.2" fill="#3FD1BE"/></svg>
+      مسار القبول
+    </a>
+    <ul>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#journey">رحلة القبول</a></li>
+      <li><a href="#destinations">الوجهات</a></li>
+      <li><a href="#check">افحص فرصتك</a></li>
+      <li><a href="#packages">الباقات</a></li>
+      <li><a href="#faq">الأسئلة</a></li>
+    </ul>
+    <a class="btn" href="#contact">تواصل معنا</a>
+  </nav>
+</header>
+
+<div class="hero-band" id="top">
+  <div class="hero wrap">
+    <div>
+      <span class="badge"><i></i> التقديم لدفعة خريف ٢٠٢٧ مفتوح الآن</span>
+      <h1>قبولك الجامعي، <span>بخطة واضحة</span> ومتابعة لحظة بلحظة</h1>
+      <p class="lead">نختار لك الجامعات المناسبة لمعدلك وميزانيتك، ونجهّز ملفك ونقدّمه، ونتابع طلباتك حتى يصلك خطاب القبول. داخل المملكة وخارجها.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#check">افحص فرصتك الآن</a>
+        <a class="btn btn-ghost" href="#contact">تواصل معنا</a>
+      </div>
+      <div class="trust">
+        <span><svg width="16" height="16"><use href="#i-check"/></svg>بكالوريوس · ماجستير · دكتوراه</span>
+        <span><svg width="16" height="16"><use href="#i-check"/></svg>أكثر من ٨ دول</span>
+        <span><svg width="16" height="16"><use href="#i-check"/></svg>خطة القبول خلال ٤٨ ساعة</span>
+      </div>
+    </div>
+
+    <div class="tracker" aria-label="مثال على لوحة متابعة الطلبات">
+      <div class="tr-head">
+        <div><b>لوحة متابعة طلباتك</b><br><small>STUDENT · #2027-0418</small></div>
+        <span class="live">تحديث مباشر</span>
+      </div>
+      <div class="apps" id="apps"></div>
+      <p class="tr-foot">مثال توضيحي لطريقة متابعتنا لطلباتك، والبيانات افتراضية</p>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="services">
+    <div class="sec-head">
+      <span class="eyebrow">الخدمات</span>
+      <h2>كل ما يحتاجه ملف القبول، في مكان واحد</h2>
+    </div>
+    <div class="services">
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>اختيار الجامعة والتخصص</h3><p>قائمة من ٣ إلى ٥ جامعات تناسب معدلك ودرجة اللغة والميزانية، مع مقارنة الرسوم والتصنيف.</p></div>
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7"/></svg></div><h3>تجهيز المستندات</h3><p>مراجعة الكشوف والشهادات والترجمة المعتمدة، وترتيب الملف حسب متطلبات كل جامعة.</p></div>
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg></div><h3>خطاب الدافع والسيرة الذاتية</h3><p>صياغة احترافية لخطاب الدافع (SOP) والسيرة الذاتية، وإرشاد في طلب خطابات التوصية.</p></div>
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></div><h3>التقديم والمتابعة</h3><p>نرفع الطلبات على بوابات الجامعات أو UCAS أو Common App، ونتابع المراسلات حتى صدور القرار.</p></div>
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3z"/><path d="M8 7V4h8v3"/></svg></div><h3>الابتعاث والمنح</h3><p>نرشدك لبرامج الابتعاث والمنح المتاحة ونطابق اختياراتك مع قوائم الجامعات المعتمدة.</p></div>
+      <div class="svc"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><h3>بعد القبول</h3><p>إرشاد في التأشيرة الدراسية وحجز السكن والتسجيل في الجامعة قبل السفر.</p></div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="sec-head">
+      <span class="eyebrow">رحلة القبول</span>
+      <h2>خمس مراحل من أول تواصل حتى القبول</h2>
+      <p>اضغط على أي مرحلة لتعرف ماذا يحدث فيها بالتفصيل.</p>
+    </div>
+    <div class="journey">
+      <ol class="step-list" role="tablist" id="stepList"></ol>
+      <div class="step-panel" role="tabpanel" id="stepPanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="destinations">
+    <div class="sec-head">
+      <span class="eyebrow">الوجهات</span>
+      <h2>أين نقدّم لك؟</h2>
+      <p>اختر الدولة لترى المتطلبات الشائعة. تختلف المتطلبات الدقيقة حسب الجامعة والتخصص، ونؤكدها لك قبل التقديم.</p>
+    </div>
+    <div class="dest-tabs" role="tablist" id="destTabs"></div>
+    <div class="dest-card" id="destCard" aria-live="polite"></div>
+  </section>
+
+  <section id="check">
+    <div class="sec-head">
+      <span class="eyebrow">افحص فرصتك</span>
+      <h2>قراءة أولية لفرص قبولك في ثوانٍ</h2>
+      <p>حرّك المؤشرات وستتغير النتيجة مباشرة. هذا تقدير إرشادي، والتقييم الدقيق يكون في جلسة التقييم.</p>
+    </div>
+    <div class="checker">
+      <div class="panel">
+        <div class="field"><span class="lbl" id="lvlL">المرحلة</span>
+          <div class="seg" role="group" aria-labelledby="lvlL" id="lvl">
+            <button type="button" data-v="ba">بكالوريوس</button><button type="button" data-v="ma" aria-pressed="true">ماجستير</button><button type="button" data-v="phd">دكتوراه</button>
+          </div></div>
+        <div class="field"><label for="cty">الوجهة</label>
+          <select id="cty"><option value="uk" selected>بريطانيا</option><option value="us">أمريكا</option><option value="ca">كندا</option><option value="au">أستراليا</option><option value="my">ماليزيا</option><option value="sa">السعودية</option></select></div>
+        <div class="field"><label for="gpa">المعدل من ١٠٠</label>
+          <div class="range-row"><input id="gpa" type="range" min="60" max="100" value="84"><span class="range-val" id="gpaV">84</span></div></div>
+        <div class="field"><label for="ielts">درجة IELTS أو ما يعادلها</label>
+          <div class="range-row"><input id="ielts" type="range" min="0" max="8" step="0.5" value="6.5"><span class="range-val" id="ieltsV">6.5</span></div></div>
+        <div class="field"><span class="lbl" id="fundL">التمويل</span>
+          <div class="seg" role="group" aria-labelledby="fundL" id="fund">
+            <button type="button" data-v="self">خاص</button><button type="button" data-v="schol" aria-pressed="true">ابتعاث أو منحة</button><button type="button" data-v="spon">جهة راعية</button>
+          </div></div>
+      </div>
+      <div class="result" id="result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="packages">
+    <div class="sec-head">
+      <span class="eyebrow">الباقات</span>
+      <h2>اختر مستوى المساعدة الذي تحتاجه</h2>
+      <p>الأسعار مبدئية وقابلة للتعديل.</p>
+    </div>
+    <div class="pkgs">
+      <div class="pkg"><h3>جلسة التقييم</h3><div class="price">٢٩٩ <small>ريال</small></div><ul>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>جلسة ٤٥ دقيقة لمراجعة ملفك بالتفصيل</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>قائمة ٥ جامعات مرشحة</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>جدول مواعيد التقديم</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>يُخصم المبلغ إذا حجزت موعداً مع مشرف</li></ul>
+        <a class="btn btn-ghost" href="#contact">احجز جلسة التقييم</a></div>
+      <div class="pkg feat"><span class="tag">الأكثر طلباً</span><h3>حجز موعد مع مشرف</h3><div class="price">٣٬٧٥٠ <small>ريال</small></div><ul>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>مشرف مخصص يتابع ملفك من البداية حتى القبول</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>مواعيد دورية مع المشرف لمراجعة التقدم</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>التقديم على الجامعات المختارة ومتابعة الطلبات</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>كتابة خطاب الدافع والسيرة الذاتية</li>
+        <li><svg width="16" height="16"><use href="#i-check"/></svg>إرشاد التأشيرة والسكن بعد القبول</li></ul>
+        <a class="btn btn-primary" href="#contact">احجز موعدك</a></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><span class="eyebrow">الأسئلة الشائعة</span><h2>قبل أن تسأل</h2></div>
+    <div class="faq">
+      <details open><summary>هل تضمنون القبول؟</summary><p>قرار القبول بيد الجامعة وحدها. دورنا أن نختار جامعات تناسب ملفك ونقدّم ملفاً قوياً ومكتملاً، وهذا يرفع فرصتك بشكل كبير.</p></details>
+      <details><summary>لا أملك شهادة لغة بعد، هل أبدأ؟</summary><p>نعم. كثير من الجامعات تمنح قبولاً مشروطاً، أو تقبل برنامج لغة تحضيرياً قبل الدراسة. نبدأ الملف بالتوازي مع استعدادك للاختبار.</p></details>
+      <details><summary>متى أبدأ التقديم؟</summary><p>الأفضل قبل بداية الدراسة بـ ٨ إلى ١٢ شهراً، خصوصاً لبريطانيا وأمريكا، لأن بعض المواعيد والمنح تُغلق مبكراً.</p></details>
+      <details><summary>هل رسوم التقديم للجامعات مشمولة؟</summary><p>لا. رسوم التقديم التي تطلبها بعض الجامعات تُدفع لها مباشرة، ونوضحها لك مسبقاً.</p></details>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div class="sec-head contact-head">
+        <span class="eyebrow">تواصل معنا</span>
+        <h2>تواصل معنا</h2>
+        <p>اتصل بنا أو راسلنا على واتساب أو البريد، ونرتب معك الخطوة التالية.</p>
+      </div>
+      <div class="cbox">
+        <div class="ic"><svg width="24" height="24"><use href="#i-phone"/></svg></div>
+        <small>رقم الجوال</small>
+        <div class="cval"><strong id="phoneText"></strong><button class="copy" type="button" data-copy="phone">نسخ</button></div>
+        <div class="cbtns">
+          <a class="btn btn-primary" id="callLink" href="#"><svg width="20" height="20"><use href="#i-phone"/></svg>اتصل بنا</a>
+          <a class="btn btn-wa" id="waLink" href="#" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#i-wa"/></svg>واتساب</a>
+        </div>
+      </div>
+      <div class="cbox">
+        <div class="ic"><svg width="24" height="24"><use href="#i-mail"/></svg></div>
+        <small>البريد الإلكتروني</small>
+        <div class="cval"><strong id="mailText"></strong><button class="copy" type="button" data-copy="mail">نسخ</button></div>
+        <div class="cbtns">
+          <a class="btn btn-ghost" id="mailLink" href="#"><svg width="20" height="20"><use href="#i-mail"/></svg>أرسل بريداً</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© ٢٠٢٦ مسار القبول. خدمة استشارية مستقلة غير تابعة لأي جامعة.</span>
+    <span id="footContact" dir="ltr"></span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="تواصل سريع">
+  <a class="btn btn-primary" id="mCall" href="#"><svg width="20" height="20"><use href="#i-phone"/></svg>اتصل</a>
+  <a class="btn btn-wa" id="mWa" href="#" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#i-wa"/></svg>واتساب</a>
+</nav>
+
+<script>
+(function(){
+  const $ = id => document.getElementById(id);
+  const chk = '<svg width="16" height="16"><use href="#i-check"/></svg>';
+
+  /* ===== بيانات التواصل: عدّلها هنا فقط ===== */
+  const PHONE_LOCAL = "0504222884";
+  const PHONE_INTL  = "966504222884";
+  const EMAIL = "lda2030sa@gmail.com";
+  const WA_TEXT = "السلام عليكم، أرغب في الاستفسار عن خدمات القبول الجامعي";
+
+  const phonePretty = PHONE_LOCAL.replace(/^(\d{3})(\d{3})(\d{4})$/, "$1 $2 $3");
+  const tel = "tel:+" + PHONE_INTL, wa = "https://wa.me/" + PHONE_INTL + "?text=" + encodeURIComponent(WA_TEXT);
+  $("phoneText").textContent = phonePretty;
+  $("mailText").textContent = EMAIL;
+  $("callLink").href = $("mCall").href = tel;
+  $("waLink").href = $("mWa").href = wa;
+  $("mailLink").href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("استفسار عن القبول الجامعي");
+  $("footContact").textContent = phonePretty + "  ·  " + EMAIL;
+  document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", () => {
+    const el = b.dataset.copy === "phone" ? $("phoneText") : $("mailText");
+    const done = () => { b.textContent = "تم النسخ"; setTimeout(() => b.textContent = "نسخ", 1800); };
+    const sel = () => { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    try { navigator.clipboard.writeText(el.textContent).then(done, sel); } catch (e) { sel(); }
+  }));
+
+  /* ===== لوحة المتابعة في الواجهة ===== */
+  const states = [["تم التقديم","s0",33],["قيد المراجعة","s1",66],["عرض قبول","s2",100]];
+  const apps = [
+    {u:"جامعة في بريطانيا", m:"ماجستير إدارة أعمال · سبتمبر ٢٠٢٧", s:2},
+    {u:"جامعة في كندا", m:"ماجستير علوم البيانات · يناير ٢٠٢٨", s:1},
+    {u:"جامعة في أستراليا", m:"ماجستير الأمن السيبراني · فبراير ٢٠٢٨", s:0}
+  ];
+  function drawApps(){
+    $("apps").innerHTML = apps.map(a => { const st = states[a.s];
+      return `<div class="app"><div><div class="u">${a.u}</div><div class="m">${a.m}</div></div><span class="chip ${st[1]}">${st[0]}</span><div class="bar"><i style="width:${st[2]}%"></i></div></div>`; }).join("");
+  }
+  drawApps();
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    setInterval(() => { apps.forEach(a => a.s = (a.s + 1) % 3); drawApps(); }, 3200);
+  }
+
+  /* ===== رحلة القبول ===== */
+  const steps = [
+    {t:"التواصل والتقييم", d:"اليوم الأول", h:"نفهم هدفك وملفك", pts:["تتواصل معنا بالجوال أو واتساب","نراجع معدلك ودرجة اللغة وميزانيتك","نحدد المرحلة والوجهات المناسبة لك"]},
+    {t:"خطة القبول", d:"خلال ٤٨ ساعة", h:"قائمة جامعات مرشحة", pts:["٣ إلى ٥ جامعات بين طموحة ومناسبة ومضمونة نسبياً","مقارنة الرسوم ومدة الدراسة والتصنيف","جدول بمواعيد التقديم لكل جامعة"]},
+    {t:"تجهيز الملف", d:"١ إلى ٣ أسابيع", h:"ملف مكتمل واحترافي", pts:["مراجعة الشهادات والكشوف والترجمة","كتابة خطاب الدافع والسيرة الذاتية","ترتيب خطابات التوصية"]},
+    {t:"التقديم", d:"حسب مواعيد الجامعة", h:"رفع الطلبات ومتابعتها", pts:["التقديم على بوابات الجامعات أو UCAS أو Common App","متابعة المراسلات وطلبات المستندات الإضافية","إشعارك بكل تحديث أولاً بأول"]},
+    {t:"القرار والقبول", d:"٢ إلى ٨ أسابيع غالباً", h:"خطاب القبول في يدك", pts:["نقارن العروض معك ونختار الأنسب","نساعدك في قبول العرض ودفع العربون إن وُجد","ننتقل معك لخطوات التأشيرة والسكن"]}
+  ];
+  let cur = 0;
+  $("stepList").innerHTML = steps.map((s,i) => `<li><button class="step-btn" role="tab" id="st${i}" aria-controls="stepPanel" data-i="${i}"><span class="n">${i+1}</span><span><b>${s.t}</b><small>${s.d}</small></span></button></li>`).join("");
+  function showStep(i){
+    cur = i;
+    document.querySelectorAll(".step-btn").forEach((b,k) => { b.setAttribute("aria-selected", k===i); b.tabIndex = k===i ? 0 : -1; });
+    const s = steps[i];
+    $("stepPanel").innerHTML = `<div class="progress"><i style="width:${(i+1)*20}%"></i></div>
+      <div class="meta"><span class="tagp">المرحلة ${i+1} من ٥</span><span class="tagp">${s.d}</span></div>
+      <h3>${s.t}: ${s.h}</h3>
+      <ul>${s.pts.map(p => `<li>${chk}<span>${p}</span></li>`).join("")}</ul>
+      <div class="step-nav">${i>0?`<button class="btn btn-ghost" data-go="${i-1}">المرحلة السابقة</button>`:""}${i<4?`<button class="btn btn-primary" data-go="${i+1}">المرحلة التالية</button>`:`<a class="btn btn-primary" href="#contact">ابدأ رحلتك الآن</a>`}</div>`;
+  }
+  $("stepList").addEventListener("click", e => { const b = e.target.closest(".step-btn"); if (b) showStep(+b.dataset.i); });
+  $("stepList").addEventListener("keydown", e => {
+    const k = {ArrowLeft:1, ArrowDown:1, ArrowRight:-1, ArrowUp:-1}[e.key]; if (!k) return;
+    e.preventDefault(); const n = (cur + k + 5) % 5; showStep(n); $("st"+n).focus();
+  });
+  $("stepPanel").addEventListener("click", e => { const b = e.target.closest("[data-go]"); if (b) showStep(+b.dataset.go); });
+  showStep(0);
+
+  /* ===== الوجهات ===== */
+  const dests = [
+    {k:"sa", n:"السعودية", p:"بوابات الجامعات والقبول الموحد", l:"حسب لغة البرنامج", i:"الفصل الأول والثاني", c:"رسوم مناسبة وبرامج مسائية وموازية", note:"مناسبة للموظفين الراغبين في الماجستير دون سفر."},
+    {k:"uk", n:"بريطانيا", p:"UCAS للبكالوريوس، والجامعة مباشرة للماجستير", l:"IELTS 6.0 إلى 7.0", i:"سبتمبر، ويناير لبعض البرامج", c:"ماجستير في سنة واحدة", note:"الماجستير سنة واحدة غالباً، وهذا يقلل التكلفة الإجمالية."},
+    {k:"us", n:"أمريكا", p:"Common App أو الجامعة مباشرة", l:"TOEFL 79 إلى 100 أو IELTS 6.5", i:"الخريف والربيع", c:"تنوع كبير في التخصصات", note:"بعض البرامج تطلب GRE أو GMAT، ونحدد ذلك لك مبكراً."},
+    {k:"ca", n:"كندا", p:"الجامعة مباشرة أو OUAC في أونتاريو", l:"IELTS 6.5", i:"سبتمبر ويناير", c:"جودة تعليم وبيئة آمنة", note:"التقديم المبكر مهم لأن المقاعد في التخصصات المطلوبة محدودة."},
+    {k:"au", n:"أستراليا", p:"الجامعة مباشرة", l:"IELTS 6.5", i:"فبراير ويوليو", c:"دفعتان رئيسيتان في السنة", note:"مواعيد مرنة، وقرارات القبول سريعة نسبياً."},
+    {k:"my", n:"ماليزيا", p:"الجامعة مباشرة", l:"IELTS 5.5 إلى 6.0", i:"عدة دفعات في السنة", c:"تكلفة منخفضة وقرب ثقافي", note:"خيار اقتصادي مع برامج باللغة الإنجليزية."}
+  ];
+  let dcur = 1;
+  $("destTabs").innerHTML = dests.map((d,i) => `<button class="dtab" role="tab" data-i="${i}">${d.n}<span class="cc">${d.k.toUpperCase()}</span></button>`).join("");
+  function showDest(i){
+    dcur = i; const d = dests[i];
+    document.querySelectorAll(".dtab").forEach((b,k) => b.setAttribute("aria-selected", k===i));
+    $("destCard").innerHTML = `<div class="dcell"><small>منصة التقديم</small><b>${d.p}</b></div><div class="dcell"><small>شرط اللغة الشائع</small><b>${d.l}</b></div><div class="dcell"><small>الدفعات الرئيسية</small><b>${d.i}</b></div><div class="dcell"><small>أبرز ميزة</small><b>${d.c}</b></div><div class="dest-note">${d.note}</div>`;
+  }
+  $("destTabs").addEventListener("click", e => { const b = e.target.closest(".dtab"); if (b) showDest(+b.dataset.i); });
+  showDest(1);
+
+  /* ===== فاحص الفرص ===== */
+  const names = {uk:"بريطانيا",us:"أمريكا",ca:"كندا",au:"أستراليا",my:"ماليزيا",sa:"السعودية"};
+  const lvlN = {ba:"بكالوريوس",ma:"ماجستير",phd:"دكتوراه"};
+  const minLang = {uk:6.5,us:6.5,ca:6.5,au:6.5,my:5.5,sa:0};
+  const minGpa = {ba:{uk:80,us:80,ca:82,au:78,my:65,sa:85}, ma:{uk:75,us:78,ca:80,au:72,my:65,sa:80}, phd:{uk:82,us:85,ca:85,au:80,my:75,sa:85}};
+  const segVal = id => $(id).querySelector('[aria-pressed="true"]').dataset.v;
+  ["lvl","fund"].forEach(id => $(id).addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    $(id).querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x===b)); render();
+  }));
+  ["cty","gpa","ielts"].forEach(id => $(id).addEventListener("input", render));
+  function render(){
+    const lvl = segVal("lvl"), c = $("cty").value, g = +$("gpa").value, l = +$("ielts").value, f = segVal("fund");
+    $("gpaV").textContent = g; $("ieltsV").textContent = l === 0 ? "—" : l.toFixed(1);
+    const gNeed = minGpa[lvl][c], lNeed = minLang[c];
+    let p = 40 + (g - gNeed) * 3.2;
+    const langOk = lNeed === 0 || l >= lNeed;
+    if (lNeed) p += langOk ? 18 : (l === 0 ? -8 : -14);
+    p = Math.max(8, Math.min(95, Math.round(p)));
+    const [cls,label,color] = p >= 70 ? ["good","فرصة قوية","var(--good)"] : p >= 45 ? ["mid","فرصة جيدة مع خطة","var(--mid)"] : ["low","تحتاج خطة بديلة","var(--low)"];
+    const tips = [];
+    tips.push(g >= gNeed ? ["good",`معدلك ${g} ضمن النطاق الشائع لجامعات ${names[c]} في هذه المرحلة.`] : ["low",`معدلك أقل من النطاق الشائع (${gNeed} فأعلى)، ونرشّح جامعات بمتطلبات أنسب أو سنة تأسيسية.`]);
+    if (lNeed === 0) tips.push(["good","متطلبات اللغة تختلف حسب لغة البرنامج."]);
+    else if (l === 0) tips.push(["mid","يمكنك التقديم الآن والحصول على قبول مشروط حتى تقدّم اختبار اللغة."]);
+    else if (!langOk) tips.push(["mid",`درجتك أقل من ${lNeed} المطلوبة غالباً، والحل قبول مشروط مع برنامج لغة.`]);
+    else tips.push(["good","درجة اللغة تستوفي الشرط الشائع."]);
+    if (f === "schol") tips.push(["good","نطابق اختياراتك مع قوائم الجامعات المعتمدة للابتعاث والمنح."]);
+    const ic = {good:"✓", mid:"!", low:"✕"};
+    $("result").innerHTML = `<div class="gauge"><div class="ring" style="--p:${p};--c:${color}" data-v="${p}%"></div><div><span class="pill ${cls}">${label}</span><h3 style="margin-top:8px">${lvlN[lvl]} في ${names[c]}</h3></div></div>
+      <ul>${tips.map(([k,t]) => `<li><i style="background:var(--${k})">${ic[k]}</i><span>${t}</span></li>`).join("")}</ul>
+      <a class="btn btn-primary" href="#contact" style="justify-self:start">احصل على تقييم دقيق</a>
+      <small>تقدير إرشادي مبني على متطلبات شائعة، وليس قراراً من أي جامعة.</small>`;
+  }
+  render();
+
+  /* ===== تمييز القسم الحالي في القائمة ===== */
+  const links = [...document.querySelectorAll(".nav ul a")];
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) links.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + en.target.id)); }), {rootMargin:"-40% 0px -55% 0px"});
+    document.querySelectorAll("main section").forEach(s => io.observe(s));
+  }
+})();
+</script>
+</body>
+</html>
